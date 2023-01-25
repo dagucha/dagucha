@@ -1,0 +1,85 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+transition: 0.5s;
+
+}
+body{
+background-image: url(./ASSETS/pngtree-simple-asymmetry-white-abstract-cv-image_591341.jpg);
+background-repeat: no-repeat;
+background-size: 100vw 100vh;
+background-attachment: fixed;
+}
+h1{
+font-size: 40px;
+position: relative;
+top: 0px;
+left: 0px;
+
+background-color: rgba(0, 255, 157, 0.606);
+
+
+}
+.niveldeingles{width: 150px;
+    background-color: blue;
+}
+.niveldeespanol{
+width: 200px;
+background-color: blue;
+}
+.niveldefrances{
+width: 100px;
+background-color: blue;
+}
+h3{
+background-color: rgb(9, 78, 88);
+width: max-content;
+ color: cornsilk;
+margin: 10px;
+padding-left: 4px;
+padding-right: 4px;
+
+}
+.iconoWhatsapp{ 
+width: 70px;
+
+
+}
+.LinkdeWhatsapp{
+position: fixed;
+bottom: 70px;
+right: 50px;
+
+
+
+}
+.LinkdeWhatsapp:hover{
+background-color: rgb(119, 8, 8);
+transform: scale(115%);
+}
+header{
+display: flex;
+flex-direction: column;
+text-align: center;
+
+
+
+}
+.fotoeleonmusk{
+width: 14rem;
+border-radius: 10%;
+
+}
+.foto{
+display: flex;
+justify-content: end;
+gap: 20rem;
+margin-right: 5rem;
+}
+
+
+
+
+
+
+
