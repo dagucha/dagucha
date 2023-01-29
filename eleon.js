@@ -1,49 +1,40 @@
+var welcome = document.getElementById("welcome");
+  setTimeout(function(){
+    welcome.style.display = "none";
 
-// Get the modal
-var modal = document.getElementById("myModal");
+}, 5000);
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+const idsModal = ['miModal1', 'miModal2', 'miModal3', 'miModal4', 'miModal5', 'welcome']
+const idsBtn = ['miBtn1', 'miBtn2', 'miBtn3', 'miBtn4', 'miBtn5']
 
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
+idsBtn.forEach((id, index) => {
+  var modal = document.getElementById(idsModal[index]);
+  var btn = document.getElementById(id);
+  var span = document.getElementsByClassName("close")[index];
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  span.onclick = function() {
     modal.style.display = "none";
   }
-}
-var modal2 = document.getElementById("myModal2");
+});
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal2.style.display = "none";
-  }
-  
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-    if (event.target == modal2) {
-      modal2.style.display = "none";
-    }
-  }
-  setTimeout(function(){
-    modal2.style.display = "none";
+// Obtener el botón de cierre
+const closeButton = document.getElementById("close-welcome-screen");
 
-}, 6000);
-  
+// Obtener el contenedor de la pantalla de bienvenida
+const welcomeScreen = document.getElementById("welcome-screen");
 
+// Añadir un evento al botón de cierre para cerrar la pantalla de bienvenida
+closeButton.addEventListener("click", function() {
+  welcomeScreen.style.display = "none";
+});
 
+// Cerrar la pantalla de bienvenida después de 5 segundos
+setTimeout(function() {
+  welcomeScreen.style.display = "none";
+}, 5000);
 
 
 
