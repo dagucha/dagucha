@@ -2,273 +2,232 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Damian Charro</title>
-    <link rel="stylesheet" href="./index.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Damian Charro</title>
+  <link rel="stylesheet" href="./index.css" />
 </head>
 
 <body>
-    <!-- Trigger/Open The Modal -->
 
-    <!-- The Modal -->
-    <div id="myModal2" class="modal2">
 
-        <!-- Modal content -->
-        <div class="modal-content2">
+  <div id="welcome-screen">
+    <img src="https://th.bing.com/th/id/OIP.8V_0YXltUz3NSbg1vJpR8AHaE8?pid=ImgDet&rs=1" alt="">
+    <h1>Bienvenidos a mi curriculum vitae</h1>
+    <button id="close-welcome-screen">Cerrar</button>
+  </div>
+
+
+  <header>
+    <h1>Curriculum Vitae de Charro Damian Gustavo</h1>
+
+    <h2>ELEON MUSK</h2>
+    <div class="foto">
+      <img class="fotoeleonmusk"
+        src="https://marcelofernandez.com.ar/wp-content/uploads/2022/10/126977379_gettyimages-1395371348.jpg"
+        alt="eleon" />
+    </div>
+  </header>
+
+  <main>
+    <div>
+      <h3>Información Personal</h3>
+      <div>Estado Civil: Casado</div>
+      <div>Cantidad de Hijos: 3</div>
+      <div>Nacionalidad: Sudafrica</div>
+      <div>DNI: 99.999.999</div>
+      <div>Fecha de Nacimiento: 28 de junio de 1971</div>
+    </div>
+
+    <h3>Idiomas</h3>
+
+    <div>
+      Inglés
+      <div class="niveldeingles">.</div>
+    </div>
+    <div>
+      Español
+      <div class="niveldeespanol">.</div>
+    </div>
+    <div>
+      Francés
+      <div class="niveldefrances">.</div>
+    </div>
+    ¨
+
+
+    <div>
+      <h3>Habilidades</h3>
+
+      <div>Comunicación</div>
+      <div>Fotografia Profecional</div>
+      <div>Capacidad Analitica</div>
+      <div>Pensamiento Critico</div>
+      <div>Experiencias Interculturales</div>
+      <div>Organizacion Avanzada</div>
+      <div>Autonomia en Proyectos</div>
+    </div>
+
+    <div>
+      <h3>SOFTWARES</h3>
+
+      <!-- Botones para abrir los modales -->
+      <div class="botones">
+        <button id="miBtn1">Pack Office</button>
+        <button id="miBtn2">Final Cut</button>
+        <button id="miBtn3">Photoshop</button>
+        <button id="miBtn4">WebMaster</button>
+        <button id="miBtn5">PowerBi</button>
+      </div>
+      <div class="modales">
+        <!-- Modal Office -->
+        <div id="miModal1" class="modal">
+          <div class="modal-content">
             <span class="close">&times;</span>
-            <img src="https://th.bing.com/th/id/OIP.8V_0YXltUz3NSbg1vJpR8AHaE8?pid=ImgDet&rs=1" alt="">
-            <p>Bienvenidos a mi curriculum vitae</p>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Microsoft_Office_logo_%282019%E2%80%93present%29.svg/375px-Microsoft_Office_logo_%282019%E2%80%93present%29.svg.png"
+              alt="Office">
+            <p>Microsoft Office fue una suite ofimática de aplicaciones para computadoras de escritorio,
+              servidores y servicios para los sistemas operativos Microsoft Windows, Mac OS X, iOS,
+              Android y Linux. La última versión es Microsoft Office 2021...</p>
+          </div>
         </div>
+        <!-- Modal Final Cut -->
+        <div id="miModal2" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="https://www.pngitem.com/pimgs/m/355-3556675_final-cut-pro-x-logo-final-cut-pro.png" alt="">
+            <p>Final Cut Pro es un software de edición de vídeo no lineal desarrollado por Macromedia y
+              posteriormente por Apple. Su versión más reciente es Final Cut Pro X, la cual funciona en
+              computadoras personales que cuentan con el sistema operativo Mac OS X a partir de su versión
+              10.6.7 o posterior y procesadores Intel. El software permite a los usuarios registrar y
+              transferir vídeo a un disco duro (interno o externo), donde puede ser editado, procesado y
+              posteriormente publicado a una gran variedad de formatos.</p>
+          </div>
+        </div>
+        <!-- Modal Photoshop -->
+        <div id="miModal3" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <img
+              src="data:image/png;base64,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"
+              alt="">
+            <p>Adobe Photoshop es un editor de fotografías desarrollado por Adobe Systems Incorporated.
+              Usado principalmente para el retoque de fotografías y gráficos, su nombre en español
+              significa "tienda de fotos". Es conocido mundialmente. Fue creado en 1986 por los hermanos
+              Thomas Knoll y John Knoll, desde entonces se ha convertido en una marca de uso común, lo que
+              lleva a su uso como un verbo ('photoshopear'), aunque Adobe desaconseja su uso.</p>
+          </div>
+        </div>
+        <!-- Modal webmaster -->
+        <div id="miModal4" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="https://adclichosting.com/wp-content/uploads/2017/05/correo-electronico-futuro.jpg" alt="">
+            <p>Un webmaster1​ (contracción de las palabras en inglés web y master) o administrador de
+              sitio web, es la persona responsable del mantenimiento o programación de uno o más
+              sitios web.2​3​4​ También es conocido con las denominaciones de arquitecto web,
+              desarrollador web, autor de sitio digital, administrador de sitio digital o coordinador
+              de sitio digital.5​</p>
+          </div>
+        </div>
+        <!-- Modal PowerBi -->
+        <div id="miModal5" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Power_bi_logo_black.svg/375px-Power_bi_logo_black.svg.png"
+              alt="">
+            <p>Power BI es un servicio de análisis de datos de Microsoft orientado a proporcionar visualizaciones
+              interactivas y capacidades de inteligencia empresarial (en inglés: business intelligence o BI) con una
+              interfaz lo suficientemente simple como para que los usuarios finales puedan crear por sí mismos sus
+              propios informes y paneles.​</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="linkiconos">
+        <div class="iconoExperiencia">
+          <a href="./experiecialaboral.html">
+            <img class="iconoExperiencia" src="./ASSETS/iconoExperiencia.png" alt="" />Experiencia
+            Profesional
+          </a>
+        </div>
+        <div class="iconoFormacion">
+          <a href="./formacion.html">
+            <img class="iconoFormacion" src="./ASSETS/iconoformacion.jpeg" alt="" />Formación
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h3>
+          Foto de ELEON MUSK como Director Creativo en la Agencia de Imagen,
+          Barcelona
+        </h3>
+      </div>
+      <img src="./ASSETS/MUSK.png" alt="" />
+
+      <div>
+        Eleon Musk es un programador, físico y empresario multimillonario nacido
+        en Sudáfrica, pero nacionalizado canadiense y norteamericano, fundador
+        de empresas como Paypal, Tesla, SpaceX y Solar City, que fue nombrado el
+        hombre más rico del mundo en 2021.
+      </div>
+
+      <div>
+        <h4>Video de ELEON MUSK sobre como VENDER lo que sea</h4>
+      </div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Cq6p_22lsYs" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+  </main>
+
+  <footer>
+    <div>
+      <h3>Contacto</h3>
     </div>
-
-
-
-    <header>
-        <h1>Curriculum Vitae de Charro Damian Gustavo</h1>
-
-        <h2>ELEON MUSK</h2>
-        <div class="foto">
-            <img class="fotoeleonmusk"
-                src="https://marcelofernandez.com.ar/wp-content/uploads/2022/10/126977379_gettyimages-1395371348.jpg" />
-        </div>
-    </header>
-
-    <main>
-        <div>
-            <h3>Información Personal</h3>
-            <div>Estado Civil: Casado</div>
-            <div>Cantidad de Hijos: 3</div>
-            <div>Nacionalidad: Sudafrica</div>
-            <div>DNI: 99.999.999</div>
-            <div>Fecha de Nacimiento: 28 de junio de 1971</div>
-        </div>
-
-        <h3>Idiomas</h3>
-
-        <div>
-            Inglés
-            <div class="niveldeingles">.</div>
-        </div>
-        <div>
-            Español
-            <div class="niveldeespanol">.</div>
-        </div>
-        <div>
-            Francés
-            <div class="niveldefrances">.</div>
-        </div>
-        ¨
-
-
-        <div>
-            <h3>Habilidades</h3>
-
-            <div>Comunicación</div>
-            <div>Fotografia Profecional</div>
-            <div>Capacidad Analitica</div>
-            <div>Pensamiento Critico</div>
-            <div>Experiencias Interculturales</div>
-            <div>Organizacion Avanzada</div>
-            <div>Autonomia en Proyectos</div>
-        </div>
-
-        <div>
-            <h3>SOFTWARES</h3>
-            <!-- Trigger/Open The Modal -->
-            <button id="myBtn">Pack Office</button>
-
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Microsoft_Office_logo_%282019%E2%80%93present%29.svg/250px-Microsoft_Office_logo_%282019%E2%80%93present%29.svg.png"
-                        alt="">
-                    <p>Microsoft Office fue una suite ofimática de aplicaciones para computadoras de escritorio,
-                        servidores y servicios para los sistemas operativos Microsoft Windows, Mac OS X, iOS,
-                        Android y Linux. La última versión es Microsoft Office 2021...</p>
-                </div>
-
-            </div>
-        </div>
-        <div>
-            <!-- Trigger/Open The Modal -->
-            <button id="myBtn">Final Cut</button>
-
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <img src="https://es.wikipedia.org/wiki/Final_Cut_Pro#:~:text=Final%20Cut%20Pro%20es%20un%20software%20de%20edici%C3%B3n,su%20versi%C3%B3n%2010.6.7%20o%20posterior%20y%20procesadores%20Intel."
-                        alt="">
-                    <p>Final Cut Pro es un software de edición de vídeo no lineal desarrollado por Macromedia y
-                        posteriormente por Apple. Su versión más reciente es Final Cut Pro X, la cual funciona en
-                        computadoras personales que cuentan con el sistema operativo Mac OS X a partir de su versión
-                        10.6.7 o posterior y procesadores Intel. El software permite a los usuarios registrar y
-                        transferir vídeo a un disco duro (interno o externo), donde puede ser editado, procesado y
-                        posteriormente publicado a una gran variedad de formatos.</p>
-                </div>
-            </div>
-        </div>
-        <div>
-            <!-- Trigger/Open The Modal -->
-            <button id="myBtn">Photoshop</button>
-
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <img src="https://es.wikipedia.org/wiki/Adobe_Photoshop" alt="">
-                    <p>Adobe Photoshop es un editor de fotografías desarrollado por Adobe Systems Incorporated.
-                        Usado principalmente para el retoque de fotografías y gráficos, su nombre en español
-                        significa "tienda de fotos". Es conocido mundialmente. Fue creado en 1986 por los hermanos
-                        Thomas Knoll y John Knoll, desde entonces se ha convertido en una marca de uso común, lo que
-                        lleva a su uso como un verbo ('photoshopear'), aunque Adobe desaconseja su uso.</p>
-                </div>
-            </div>
-        </div>
-        <div>
-            <!-- Trigger/Open The Modal -->
-            <button id="myBtn">WebMaster</button>
-
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <img src="https://es.wikipedia.org/wiki/Webmaster" alt="">
-                    <p>Un webmaster1​ (contracción de las palabras en inglés web y master) o administrador de
-                        sitio web, es la persona responsable del mantenimiento o programación de uno o más
-                        sitios web.2​3​4​ También es conocido con las denominaciones de arquitecto web,
-                        desarrollador web, autor de sitio digital, administrador de sitio digital o coordinador
-                        de sitio digital.5​</p>
-                </div>
-            </div>
-        </div>
-        <div>
-            <!-- Trigger/Open The Modal -->
-            <button id="myBtn">PowerBi</button>
-
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <img src="https://es.wikipedia.org/wiki/Webmaster" alt="">
-                    <p>Un webmaster1​ (contracción de las palabras en inglés web y master) o administrador
-                        de
-                        sitio web, es la persona responsable del mantenimiento o programación de uno o más
-                        sitios web.2​3​4​ También es conocido con las denominaciones de arquitecto web,
-                        desarrollador web, autor de sitio digital, administrador de sitio digital o
-                        coordinador
-                        de sitio digital.5​</p>
-                </div>
-            </div>
-        </div>
-        <div>
-            <h3>Informacion de Estudios</h3>
-
-            <div>
-                <h4>Perfil</h4>
-            </div>
-            <div>
-                Licenciado en publicidad con 6 años de experiencia en agencia en
-                marketing. Mi capacidad creativa y analítica permite realizar campañas
-                publicitarias altamente efectivas. Aspiro crear piezas audiovisuales
-                de calidad dónde pueda demostrar todo mi potencial.
-            </div>
-        </div>
-
-        <div class="linkiconos">
-            <div class="iconoExperiencia">
-                <a href="./experiecialaboral.html">
-                    <img class="iconoExperiencia" src="./ASSETS/iconoExperiencia.png" alt="" />Experiencia
-                    Profesional
-                </a>
-            </div>
-            <div class="iconoFormacion">
-                <a href="./formacion.html">
-                    <img class="iconoFormacion" src="./ASSETS/iconoformacion.jpeg" alt="" />Formación
-                </a>
-            </div>
-        </div>
-
-        <div>
-            <h3>
-                Foto de ELEON MUSK como Director Creativo en la Agencia de Imagen,
-                Barcelona
-            </h3>
-        </div>
-        <img src="./ASSETS/MUSK.png" alt="" />
-
-        <div>
-            Eleon Musk es un programador, físico y empresario multimillonario nacido
-            en Sudáfrica, pero nacionalizado canadiense y norteamericano, fundador
-            de empresas como Paypal, Tesla, SpaceX y Solar City, que fue nombrado el
-            hombre más rico del mundo en 2021.
-        </div>
-
-        <div>
-            <h4>Video de ELEON MUSK sobre como VENDER lo que sea</h4>
-        </div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Cq6p_22lsYs" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-        </iframe>
-    </main>
-
-    <footer>
-        <div>
-            <h3>Contacto</h3>
-        </div>
-        <div>
-            <a href="tel:+54 011 9999 9999">+54 011 9999 9999</a>
-        </div>
-        <div>
-            <a href="mailto:eleonmusk@eleonmusk.com">eleonmusk@eleonmusk.com</a>
-        </div>
-        <div>Madrid, España</div>
-
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194347.38561007907!2d-3.81996278615583!3d40.438130664686526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2zTWFkcmlkLCBFc3Bhw7Fh!5e0!3m2!1ses-419!2sar!4v1674420470500!5m2!1ses-419!2sar"
-            width="250" height="175" style="border: 0" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-        <div>
-            <a href="https://Linkedin.com/eleon-musk" target="_blank">linkedin</a>
-        </div>
-        <div>
-            <a href="https://twitter.com/elonmusk" target="_blank">Twitter</a>
-        </div>
-        <div>
-            <a href="https://tiktok/eleonmusk" target="_blank">tiktok</a>
-        </div>
-    </footer>
-    <div class="LinkdeWhatsapp">
-        <a href="https://walink.co/97e8bf" target="_blank">
-            <img class="iconoWhatsapp" src="./ASSETS/WhatsApp-Transparent (1).png" alt="" />
-        </a>
+    <div>
+      <a href="tel:+54 011 9999 9999">+54 011 9999 9999</a>
     </div>
-    <div class="linkTwitter">
-        <a href="https://twitter.com/elonmusk" target="_blank">
-            <img class="iconoTwitter" src="./ASSETS/icono twitter.png" alt="" />
-        </a>
+    <div>
+      <a href="mailto:eleonmusk@eleonmusk.com">eleonmusk@eleonmusk.com</a>
     </div>
-    <div class="linkLinkedin">
-        <a href="https://Linkedin.com/eleon-musk" target="_blank"></a>
-        <img class="iconoLinkedin" src="./ASSETS/iconolinkedin3.png" alt="" />
+    <div>Madrid, España</div>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194347.38561007907!2d-3.81996278615583!3d40.438130664686526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2zTWFkcmlkLCBFc3Bhw7Fh!5e0!3m2!1ses-419!2sar!4v1674420470500!5m2!1ses-419!2sar"
+      width="250" height="175" style="border: 0" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <div>
+      <a href="https://Linkedin.com/eleon-musk" target="_blank">linkedin</a>
     </div>
-    <script src="./eleon.js"></script>
+    <div>
+      <a href="https://twitter.com/elonmusk" target="_blank">Twitter</a>
+    </div>
+    <div>
+      <a href="https://tiktok/eleonmusk" target="_blank">tiktok</a>
+    </div>
+  </footer>
+  <div class="LinkdeWhatsapp">
+    <a href="https://walink.co/97e8bf" target="_blank">
+      <img class="iconoWhatsapp" src="./ASSETS/WhatsApp-Transparent (1).png" alt="" />
+    </a>
+  </div>
+  <div class="linkTwitter">
+    <a href="https://twitter.com/elonmusk" target="_blank">
+      <img class="iconoTwitter" src="./ASSETS/icono twitter.png" alt="" />
+    </a>
+  </div>
+  <div class="linkLinkedin">
+    <a href="https://Linkedin.com/eleon-musk" target="_blank"></a>
+    <img class="iconoLinkedin" src="./ASSETS/iconolinkedin3.png" alt="" />
+  </div>
+  <script src="./eleon.js"></script>
 </body>
 
 </html>
